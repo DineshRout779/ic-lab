@@ -16,9 +16,6 @@ int main()
     for (i = 0; i < n;i++) {
         printf("\nEnter mark of student %d: ", i + 1);
         scanf("%d", &marks[i]);
-    }
-
-    for (i = 0; i < n;i++) {
 
         if (marks[i] >= 33) {
             printf("passed");
@@ -29,6 +26,7 @@ int main()
             fail_count++;
         }
     }
+
 
     pass_perc = ((float)pass_count / n);
     fail_perc = ((float)fail_count / n);
